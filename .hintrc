@@ -15,6 +15,13 @@
         "image-alt": "off"
       }
     ],
-    "axe/name-role-value": "off"
+    "axe/name-role-value": "off",
+    "no-inline-styles": "off",
+    "axe/structure": [
+      "default",
+      {
+        "list": "off"
+      }
+    ]
   }
 }

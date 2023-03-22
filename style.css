@@ -24,7 +24,7 @@ body {
     height: 65vh;
     color: rgb(5, 4, 4);
     opacity: 0.8;
-    /* background-color: black; */
+    /* background-color: rgb(255, 255, 255); */
     background-image: url(img/img1.jpg);
     background-size: cover;
     background-position: center;
@@ -70,20 +70,7 @@ body {
 }
 
 
-@media only screen and (min-width: 800px) {
-    .horizontal-list li a{
-        font-size: 1.2rem;
-        padding: 15px;
-    }
-    /* #name-social-container{
-        margin-top: -20%;
-    } */
-  }
-  /* @media only screen and (max-width: 400px) {
-    .horizontal-list li a{
-        font-size: 1rem;
-    }
-  } */
+
 
 /* Name and Social Icons*/
 
@@ -615,5 +602,111 @@ button:focus {
 
 
 
+/* media query */
+@media only screen and (min-width: 800px) {
+    .horizontal-list li a{
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+   
+    
+  } 
+   @media only  screen and (max-width: 550px) {
+    .experience-div{
+     
+    }
+    #experience-logo{
+        /* margin-left: -10%; */
+        
+    }
 
-/*Percentage Classes */
+    #Certificates{
+        margin-top: 25%;
+    }
+    
+    #timeline-divider{
+        display: none;
+    }
+
+
+
+
+
+
+
+    #experience{
+        color: rgb(255, 255, 255);
+        background-color: rgb(1, 1, 1);
+    }
+    
+    .experience-div{
+        height: 300px;
+        width: 65%;
+    }
+    .logo{
+        height: 58px;
+        width: 60px;
+    }
+    .experience-div h3{
+        color: #003b7b;
+        margin-top: -10%;
+    }
+    .experience-div {
+        /* margin-top: -5%; */
+        width: 420px;
+        /* border: 2px solid green; */
+        text-align: right;
+    }
+    
+    .timeline {
+        position: relative;
+        width: 75%;
+    }
+    
+    .timeline-box {
+        padding: 5px;
+        width: 40%;
+        min-height: 150px;
+        position: relative;
+        left: 20%;
+        text-align: right;
+    }
+    
+    .timeline-box::after {
+        display: none;
+    }
+    
+    .timeline-box:nth-child(2n) {
+        left: 20%;
+    }
+    
+    .timeline-box:nth-child(2n+1)::after {
+        left: 40%;
+    }
+    
+    .timeline-box:nth-child(2n)::after {
+        left: -9%;
+    }
+    
+    .timeline-container {
+        padding: 8px;
+    }
+    
+    .timeline-logo {
+        position: absolute;
+        width: 50px;
+        overflow: hidden;
+    }
+    
+    .timeline-logo > img {
+        width: 100%;
+    }
+    
+  .timeline-container{
+    margin-left: -70%;
+    width: 420px;
+    height: 300px;
+    /* border: 2px solid green; */
+  }
+    
+  } 
