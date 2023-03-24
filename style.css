@@ -1,81 +1,33 @@
-
-body {
-    margin: 0px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-    background-color: rgb(1, 1, 1);
-    color: rgb(255, 255, 255);
+body{
+    margin: 0;
+    padding: 0;
 }
 
+/* navbar */
 
-
-/* Body Header */
 .navbar{
-    background-color: #000000;
+    margin-top: -2%;
 }
-.collapse{
-    background-color: #0b0a0a;
-    color: white;
-}
-.nav-item .nav-link{
-    color: white;
-}
-#body-header {
+
+
+
+/* header */
+.header {
     height: 65vh;
-    color: rgb(5, 4, 4);
     opacity: 0.8;
-    /* background-color: rgb(255, 255, 255); */
-    background-image: url(img/img1.jpg);
+    background-image: url(img/slidebar.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
+/* position:relative; */
 }
-
-
-
-/* Horizontal Lists */
-
-.horizontal-list {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-}
-
-.horizontal-list li {
-    display: inline-block;
-    margin: 0px 8px 8px 0px;
-    font-weight: 100;
-    font-size: 0.9rem;
-}
-
-.horizontal-list li a {
-    color: rgb(9, 9, 9);
-    font-size:1.0rem;
-    text-decoration: none;
-}
-
-.nav-menu li a {
-    
-    transition: color 0.4s, border-bottom 2s;
-}
-
-.nav-menu li a:hover {
-    color: rgb(12, 51, 247);
-    border-bottom: 1px solid rgb(35, 15, 247);
-}
-
-.text-center {
-    text-align: center;
-}
-
-
 
 
 /* Name and Social Icons*/
 
 #name-social-container {
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 #my-name {
@@ -85,11 +37,17 @@ body {
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
-
+.social-icons li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
 .social-icons li a i {
     padding: 10px;
     font-size: 1rem;
+    color: black;
     border-radius: 50%;
+   
 }
 
 .social-icons li a i:hover {
@@ -98,8 +56,50 @@ body {
 
 
 
-/*Section Classes*/
+/*About Section*/
+.main{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* position:absolute; */
+}
+#about {
+    background-color: black;
+    height: auto;
+    width: 100%;
+   
+    
+    margin-bottom: 30px;
+}
 
+#my-image {
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+    position:relative;
+}
+
+#my-image img {
+    margin-top: 5%;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 3px solid rgb(156, 156, 156);
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    text-align: justify;
+    margin-left: 15%;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    line-height: 28px;
+    font-size: 1.1rem;
+    margin-top:5% ;
+}
 #about{
     background-color: rgb(4, 4, 4);
     color: rgb(255, 255, 255);
@@ -136,53 +136,19 @@ section:nth-child(2n + 1) {
 
 
 
-/*About Section*/
-
-#about {
-    height: auto;
-    width: 100%;
-    position: relative;
-    margin-bottom: 30px;
-}
-
-#my-image {
-    height: 12rem;
-    width: 12rem;
-    margin: auto;
-    margin-top: -17vh;
-}
-
-#my-image img {
-    margin-top: 5%;
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-    border: 3px solid rgb(156, 156, 156);
-    box-shadow: 1px 1px 10px 2px lightgrey;
-}
-
-#about-para {
-    padding: 10px;
-    width: 70%;
-    text-align: justify;
-    color: rgb(255, 255, 255);
-    line-height: 28px;
-    font-size: 1.1rem;
-    margin-top:5% ;
-}
-
-
-
 /*Skills Section*/
 #skills{
-    /* margin-top: 1%; */
+    /* margin-top:; */
+    /* position:sticky; */
+    margin-top: -4%;
     background-color: rgb(4, 3, 3);
     color: rgb(255, 255, 255);
 }
 .skills-display {
+    margin-left: 12%;
     width: 75%;
     padding: 10px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -263,7 +229,6 @@ section:nth-child(2n + 1) {
 
 
 
-
 /* Work Experience */
 
 #experience{
@@ -272,12 +237,17 @@ section:nth-child(2n + 1) {
 }
 
 .experience-div{
+    margin-top: 5%;
+    margin-left: 8%;
     height: 300px;
-    width: 65%;
+    width: 75%;
+    height: auto;
+   
 }
 .logo{
-    height: 58px;
-    width: 60px;
+    /* border-radius: 50%; */
+    height: 42px;
+    width: 45px;
 }
 .experience-div h3{
     color: #003b7b;
@@ -286,21 +256,28 @@ section:nth-child(2n + 1) {
 .experience-div {
     /* margin-top: -5%; */
     text-align: right;
+    margin-right: 50%;
 }
 
 .timeline {
     position: relative;
     width: 75%;
+    margin-left: 12%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .timeline-box {
     padding: 5px;
+    /* padding: 0 10%; */
     width: 40%;
     min-height: 150px;
     position: relative;
     left: 5%;
     text-align: right;
 }
+
 
 .timeline-box::after {
     content: '';
@@ -394,6 +371,21 @@ section:nth-child(2n + 1) {
 
 
 
+
+
+/* certificate */
+#Certificates{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* .experience-designation{
+    width: 70%;
+    margin-left: 30%;
+  } */
+
 /* education */
 #education{
     color: #ffffff;
@@ -455,6 +447,15 @@ section:nth-child(2n + 1) {
 
 
 
+
+
+
+
+
+
+
+/* contact */
+/* Contact Form */
 /* Contact Form */
 
 #contact {
@@ -462,8 +463,11 @@ section:nth-child(2n + 1) {
     background-image: linear-gradient(50deg, #a6a855 0%, #9b9a9a 74%);
     color: rgb(13, 13, 13);
     padding-bottom: 40px;
-}
 
+}
+.section-heading{
+    text-align: center;
+}
 #contact h1,
 #contact h1 span {
     color: rgb(9, 9, 9);
@@ -602,27 +606,39 @@ button:focus {
 
 
 
+
+
+
+
+
+
+
 /* media query */
-@media only screen and (min-width: 800px) {
-    .horizontal-list li a{
-        font-size: 1.2rem;
-        padding: 15px;
+@media only screen and (min-width: 700px) {
+    #head{
+        margin-left: 10%;
+    }
+    .head{
+        margin-left: 10%;
     }
    
     
   } 
    @media only  screen and (max-width: 550px) {
-    .experience-div{
-     
-    }
-    #experience-logo{
-        /* margin-left: -10%; */
-        
+    .navbar{
+        margin-top: -6%;
     }
 
-    #Certificates{
-        margin-top: 25%;
+    #skills{
+        margin-top: -10%;
     }
+#Experience{
+    height:600px;
+}
+  .experience-designation{
+    width: 70%;
+    margin-left: 30%;
+  }
     
     #timeline-divider{
         display: none;
@@ -709,4 +725,27 @@ button:focus {
     /* border: 2px solid green; */
   }
     
+
+
+
+  /* contact */
+
+
+  #contact-container{
+    display: block;
+  }
+  #contact-form-container{
+    width: 85%;
+  }
+  #input-message{
+    margin-left: 5%;
+  }
+#my-details-container{
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 85%;
+}
+
+
+
   } 

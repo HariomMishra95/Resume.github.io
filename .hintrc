@@ -3,10 +3,10 @@
     "development"
   ],
   "hints": {
-    "axe/language": [
+    "axe/name-role-value": [
       "default",
       {
-        "html-has-lang": "off"
+        "link-name": "off"
       }
     ],
     "axe/text-alternatives": [
@@ -15,13 +15,6 @@
         "image-alt": "off"
       }
     ],
-    "axe/name-role-value": "off",
-    "no-inline-styles": "off",
-    "axe/structure": [
-      "default",
-      {
-        "list": "off"
-      }
-    ]
+    "detect-css-reflows/layout": "off"
   }
 }
