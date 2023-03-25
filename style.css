@@ -583,7 +583,7 @@ button:focus {
         display: none;
     }
 #about{
-    margin-top: 10vh;
+    margin-top: 10%;
 }
 #head{
     margin-left: 30%;
@@ -619,7 +619,7 @@ button:focus {
     .timeline {
         position: relative;
         width: 75%;
-        margin-left: -2%;
+        margin-left: -0%;
     }
     
     .timeline-box {
