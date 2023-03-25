@@ -617,7 +617,7 @@ button:focus {
     .timeline {
         position: relative;
         width: 75%;
-        margin-left: 5%;
+        margin-left: -10%;
     }
     
     .timeline-box {
