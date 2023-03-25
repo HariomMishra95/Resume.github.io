@@ -15,6 +15,7 @@
         "image-alt": "off"
       }
     ],
-    "detect-css-reflows/layout": "off"
+    "detect-css-reflows/layout": "off",
+    "highest-available-document-mode": "off"
   }
 }

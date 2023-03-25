@@ -4,13 +4,9 @@ body{
 }
 
 /* navbar */
-
 .navbar{
     margin-top: -2%;
 }
-
-
-
 /* header */
 .header {
     height: 65vh;
@@ -20,9 +16,8 @@ body{
     background-position: center;
     background-attachment: fixed;
     padding-top: 1.2rem;
-/* position:relative; */
+position:relative;
 }
-
 
 /* Name and Social Icons*/
 
@@ -53,22 +48,16 @@ body{
 .social-icons li a i:hover {
     box-shadow: 0px 0px 6px 4px rgba(8, 8, 8, 0.3);
 }
-
-
-
 /*About Section*/
 .main{
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* position:absolute; */
 }
 #about {
     background-color: black;
     height: auto;
     width: 100%;
-   
-    
     margin-bottom: 30px;
 }
 
@@ -138,8 +127,6 @@ section:nth-child(2n + 1) {
 
 /*Skills Section*/
 #skills{
-    /* margin-top:; */
-    /* position:sticky; */
     margin-top: -4%;
     background-color: rgb(4, 3, 3);
     color: rgb(255, 255, 255);
@@ -148,7 +135,6 @@ section:nth-child(2n + 1) {
     margin-left: 12%;
     width: 75%;
     padding: 10px;
-    /* margin-bottom: 30px; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -238,25 +224,22 @@ section:nth-child(2n + 1) {
 
 .experience-div{
     margin-top: 5%;
-    margin-left: 8%;
+    margin-left: 12%;
     height: 300px;
     width: 75%;
     height: auto;
    
 }
 .logo{
-    /* border-radius: 50%; */
-    height: 42px;
-    width: 45px;
+    height: 52px;
+    width: 55px;
 }
 .experience-div h3{
     color: #003b7b;
-    margin-top: -10%;
+    margin-top: -5%;
 }
 .experience-div {
-    /* margin-top: -5%; */
     text-align: right;
-    margin-right: 50%;
 }
 
 .timeline {
@@ -270,7 +253,6 @@ section:nth-child(2n + 1) {
 
 .timeline-box {
     padding: 5px;
-    /* padding: 0 10%; */
     width: 40%;
     min-height: 150px;
     position: relative;
@@ -368,11 +350,6 @@ section:nth-child(2n + 1) {
     text-align: justify;
 }
 
-
-
-
-
-
 /* certificate */
 #Certificates{
     background-color: black;
@@ -380,11 +357,6 @@ section:nth-child(2n + 1) {
     align-items: center;
     text-align: center;
 }
-
-/* .experience-designation{
-    width: 70%;
-    margin-left: 30%;
-  } */
 
 /* education */
 #education{
@@ -444,18 +416,6 @@ section:nth-child(2n + 1) {
     background-color: #0a0b0b78;
     color: rgb(255, 255, 255);
 }
-
-
-
-
-
-
-
-
-
-
-/* contact */
-/* Contact Form */
 /* Contact Form */
 
 #contact {
@@ -573,10 +533,6 @@ button:focus {
     outline: none;
 }
 
-
-
-/* Common Margin Classes */
-
 .m0 {
     margin: 0;
 }
@@ -588,9 +544,6 @@ button:focus {
 .mb50px {
     margin-bottom: 50px;
 }
-
-
-
 /*common color classes */
 
 .text-highlight {
@@ -598,20 +551,6 @@ button:focus {
     font-weight: 600;
 
 }
-
-
-
-/* setting background-color */
-
-
-
-
-
-
-
-
-
-
 
 /* media query */
 @media only screen and (min-width: 700px) {
@@ -637,41 +576,42 @@ button:focus {
 }
   .experience-designation{
     width: 70%;
-    margin-left: 30%;
+    /* margin-left: 30%; */
   }
     
     #timeline-divider{
         display: none;
     }
 
-
-
-
-
-
-
+#head{
+    margin-left: 30%;
+}
+.head{
+    margin-left: 30%;
+    margin-right: 0%;
+}
+#bca{
+    margin-left: 25%;
+}
     #experience{
         color: rgb(255, 255, 255);
         background-color: rgb(1, 1, 1);
     }
     
     .experience-div{
-        height: 300px;
+         height: 300px;
         width: 65%;
+        margin-left: 17%;
+        text-align: right; 
     }
     .logo{
-        height: 58px;
-        width: 60px;
+        height: 48px;
+        width: 50px;
     }
     .experience-div h3{
         color: #003b7b;
+        font-size: 1.5rem;
         margin-top: -10%;
-    }
-    .experience-div {
-        /* margin-top: -5%; */
-        width: 420px;
-        /* border: 2px solid green; */
-        text-align: right;
     }
     
     .timeline {
@@ -719,18 +659,14 @@ button:focus {
     }
     
   .timeline-container{
-    margin-left: -70%;
-    width: 420px;
+    width: 250px;
     height: 300px;
-    /* border: 2px solid green; */
   }
     
 
 
 
   /* contact */
-
-
   #contact-container{
     display: block;
   }
@@ -745,7 +681,7 @@ button:focus {
     margin-top: 10%;
     width: 85%;
 }
-
-
-
+.ic{
+    margin-left: -20px;
+}
   } 
