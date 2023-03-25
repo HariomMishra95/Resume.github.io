@@ -582,8 +582,8 @@ button:focus {
     #timeline-divider{
         display: none;
     }
-#about{
-    margin-top: 10%;
+main{
+    margin-top: 5%;
 }
 #head{
     margin-left: 30%;
@@ -619,7 +619,7 @@ button:focus {
     .timeline {
         position: relative;
         width: 75%;
-        margin-left: -0%;
+        margin-left: 5%;
     }
     
     .timeline-box {
